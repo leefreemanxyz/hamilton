@@ -22,3 +22,15 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+@mixin centerer {
+  position: relative;
+  transform:translateY(25%);
+
+}
+@mixin center-menu{
+
+
+    width: fit-content;
+    margin: auto;
+    padding-left: 0;
+}
