@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Infinite scroll
 # Media
 	## Galleries
+# Custom
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -767,3 +768,9 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+body {
+  color: yellow; }
