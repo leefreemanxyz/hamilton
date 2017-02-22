@@ -26,13 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'components/header/site', 'branding' ); ?>
-
-		<?php hamilton_the_custom_logo(); ?>
-
-		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
-
-		<?php hamilton_social_menu(); ?>
+		
 
 	</header>
 	<div id="content" class="site-content">

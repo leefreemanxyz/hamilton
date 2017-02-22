@@ -1,3 +1,26 @@
+// Media queries
 body{
-  color:yellow;
+  background-color:$tertiary-color;
+}
+
+//layout
+.content-area{
+  background-color:$secondary-color;
+}
+.widget-area{
+  background-color: $primary-color;
+  min-height:100%;
+  margin:0;
+  position: fixed;
+  background-color: $primary-color;
+  top: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: #{$breakpoint_tablet}) {
+  .widget-area{
+    height:50vh;
+    overflow-y:hidden;
+    position:static;
+  }
 }

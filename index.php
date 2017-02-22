@@ -12,16 +12,19 @@
  * @package Hamilton
  */
 
-get_header(); ?>
+get_header();
+ ?>
+<?php get_sidebar() ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
 		<?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1>HELP</h1>
+
 				</header>
 			<?php
 			endif;
@@ -49,5 +52,4 @@ get_header(); ?>
 		</main>
 	</div>
 <?php
-get_sidebar();
 get_footer();

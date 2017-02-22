@@ -11,9 +11,13 @@ var autoprefixer = require('gulp-autoprefixer');
 
 // styles task
 gulp.task('styles', function() {
-  return gulp.src(['./assets/stylesheets/**/*.scss'])
+  return gulp.src(['./assets/stylesheets/style.scss'])
     .pipe(sass())
     .pipe(concat('style.css'))
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('./'))
     .pipe(cssmin())
     .pipe(rename({

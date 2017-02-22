@@ -606,13 +606,13 @@ body {
 
 @media screen and (min-width: 37.5em) {
   .content-area {
-    float: left;
+    float: right;
     margin: 0 -25% 0 0;
     width: 100%; }
   .site-main {
     margin: 0 25% 0 0; }
   .site-content .widget-area {
-    float: right;
+    float: left;
     overflow: hidden;
     width: 25%; }
   .site-footer {
@@ -773,4 +773,22 @@ object {
 # Custom
 --------------------------------------------------------------*/
 body {
-  color: yellow; }
+  background-color: #b2dfdb; }
+
+.content-area {
+  background-color: #80cbc4; }
+
+.widget-area {
+  background-color: #009688;
+  min-height: 100%;
+  margin: 0;
+  position: fixed;
+  background-color: #009688;
+  top: 0;
+  bottom: 0; }
+
+@media screen and (max-width: 37.5em) {
+  .widget-area {
+    height: 50vh;
+    overflow-y: hidden;
+    position: static; } }
